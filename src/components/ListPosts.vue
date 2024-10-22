@@ -48,7 +48,7 @@ function getYear(date: Date | string | number) {
     </template>
     <li v-for="(post, index) in list " :key="post.data.title" mb-8>
       <div v-if="!isSameYear(post.data.date, list[index - 1]?.data.date)" select-none relative h18 pointer-events-none>
-        <span text-7em color-transparent font-bold text-stroke-2 text-stroke-hex-aaa op14 absolute top--0.2em>
+        <span text-7em color-transparent font-bold text-stroke-2 text-stroke-hex-aaa op-20 absolute top--0.2em>
           {{ getYear(post.data.date) }}
         </span>
       </div>
@@ -60,17 +60,31 @@ function getYear(date: Date | string | number) {
               {{ post.data.title }}
             </span>
           </div>
-          <div opacity-50 text-sm ws-nowrap flex="~ gap-2 items-center">
+          <div opacity-70 text-sm ws-nowrap flex="~ gap-2 items-center">
             <i v-if="post.data.redirect" text-base i-ri-external-link-line />
             <i v-if="post.data.recording || post.data.video" text-base i-ri:film-line />
             <time v-if="post.data.date" :datetime="getDate(post.data.date)">{{ post.data.date.split(',')[0] }}</time>
             <span v-if="post.data.duration">· {{ post.data.duration }}</span>
-            <span v-if="post.data.tag">· {{ post.data.tag }}</span>
-            <span v-if="post.data.lang && post.data.lang.includes('zh')">· 中文</span>
+            <span v-if="post.data.tags">
+              <!-- tags should have rounded borders like clips -->
+              <span v-for="tag in post.data.tags" :key="tag" class="tag">{{ tag }}</span>
+            </span>
           </div>
         </div>
-        <div opacity-50 text-sm>{{ post.data.description }}</div>
+        <div opacity-70 text-sm>{{ post.data.description }}</div>
       </a>
     </li>
   </ul>
+  <style>
+    .tag {
+    display: inline-block;
+    background-color: #f0f0f0; /* light background color */
+    border: 1px solid #ccc; /* chip-style border */
+    border-radius: 16px; /* rounded corners */
+    padding: 4px 8px; /* padding for the chip look */
+    margin-right: 8px; /* space between chips */
+    font-size: 14px; /* font size adjustment */
+    color: #333; /* text color */
+    }
+  </style>
 </template>

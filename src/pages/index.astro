@@ -5,94 +5,99 @@ import siteConfig from '@/site-config'
 
 <BaseLayout description={siteConfig.description}>
   <article class="prose">
-    <h1 class="text-title">Vitesse theme</h1>
-    <p>Vitesse theme for Astro, supports Vue and UnoCSS.</p>
+    <h1>Devansh</h1>
     <p>
-      A minimal, SEO-riendly portfolio and blog theme for Astro. It's inspired
-      by <a target="_blank" href="https://antfu.me">antfu.me</a>.
+      Hi, I'm Devansh, a final-year CS student at the National University of
+      Singapore.
     </p>
     <p>
-      <img width="640" height="360" src="/hero.jpg" alt="Hero Image" />
+      I often describe myself as <strong>creative problem solver</strong> who enjoys
+      working on difficult problems that have a real-world impact. Typically, this
+      involves using technology, math, or algorithms in some way, but I'm always
+      open to new ideas.
     </p>
     <p>
-      Based on first principles thinking, and you can also see from the picture
-      <sup>👆</sup>, the goal of this theme is to
-      <b>make complex things as simple as possible</b>
-      . So, the core of this theme is the content, and the other elements are just
-      auxiliary.
+      <strong>Right now</strong>, I am:
     </p>
-    <p>Here are the features you don't need to worry about:</p>
     <ul>
-      <li>100 / 100 Lighthouse performance</li>
-      <li>Responsive</li>
-      <li>SEO-friendly</li>
-      <li>Light / Dark Theme</li>
-      <li>Markdown support</li>
+      <li>working on my final-year project</li>
       <li>
-        <a target="_blank" href="https://mdxjs.com/">MDX</a>
-        (components in your markdown) support
+        reading books that i've always wanted to, but didn't have the time to.
       </li>
-      <li>
-        <a target="_blank" href="https://vuejs.org/">Vue</a>
-        SFC component support
-      </li>
-      <li>Auto generated sitemap and RSS Feed</li>
-      <li>
-        <a target="_blank" href="https://vueuse.org/">VueUse</a>
-        &
-        <a target="_blank" href="https://lodash.com/">Lodash</a>
-        support
-      </li>
+      <li>trying to write blogs more often.</li>
+      <li>enjoying my final year at NUS</li>
     </ul>
-    <p>
-      By the way, this theme use the <a
-        target="_blank"
-        href="https://unocss.dev/">UnoCSS</a
-      > for style, it's fast.
-    </p>
-    <p>
-      Visit it
-      <a
-        target="_blank"
-        href="https://github.com/kevinwong865/astro-theme-vitesse"
-      >
-        on GitHub
-      </a>
-      to fork the repository, read the docs or one-click deploy on Netlify.
-    </p>
-    <p>
-      If you like Vitesse theme for Astro, please
-      <a target="_blank" href="https://github.com/kevinwong865">
-        click follow
-      </a>
-      for me.
-    </p>
-    <hr class="hr-line" />
-    <p>Find me on</p>
-    <p class="flex gap-x-4 gap-y-2 flex-wrap">
-      {
-        siteConfig.socialLinks.map((link) => (
-          <a
-            aria-label={link.text}
-            href={link.href}
-            target="_blank"
-            class="prose-link"
-          >
-            <i class:list={[link.icon]} />
-            {link.text}
-          </a>
-        ))
-      }
-    </p>
-    <p>
-      If you have any questions, please email me at
-      <a
-        prose-link
-        aria-label={siteConfig.email}
-        href={`mailto:${siteConfig.email}`}
-      >
-        {siteConfig.email}
-      </a>.
-    </p>
+    <p><strong>In NUS</strong>, I have:</p>
+    <ul>
+      <li>
+        been part of <a
+          class="prose-link"
+          href="https://www.nushackers.org/"
+          target="_blank"
+        >
+          NUS Hackers</a
+        > (Coreteam), <a
+          class="prose-link"
+          href="https://www.linkedin.com/company/nusstartit/"
+          target="_blank">StartIT</a
+        > (President) and <a
+          href="https://www.comp.nus.edu.sg/~vwo/"
+          class="prose-link"
+          target="_blank"
+        >
+          CVWO</a
+        > (President)
+      </li>
+      <li>
+        taught <a
+          class="prose-link"
+          href="https://nusmods.com/courses/CS2040S/data-structures-and-algorithms"
+          target="_blank"
+        >
+          Algorithms</a
+        > (2x), <a
+          class="prose-link"
+          href="https://nusmods.com/courses/CS3230/design-and-analysis-of-algorithms"
+          target="_blank"
+        >
+          Algorithms</a
+        >, <a> Programming</a>, <a
+          class="prose-link"
+          target="_blank"
+          href="https://nusmods.com/courses/CS1231S/discrete-structures"
+        >
+          Discrete Structures</a
+        >, <a
+          class="prose-link"
+          href="https://nusmods.com/courses/CS2103T/software-engineering"
+          target="_blank"
+        >
+          Software Engineering</a
+        >, and <a
+          class="prose-link"
+          target="_blank"
+          href="https://nusmods.com/courses/IT5003/data-structures-and-algorithms"
+        >
+          Algorithms</a
+        > as a teaching assistant.
+      </li>
+      <hr class="hr-line" />
+      <p>You can find me on:</p>
+      <p class="flex gap-x-4 gap-y-2 flex-wrap">
+        {
+          siteConfig.socialLinks.map((link) => (
+            <a
+              aria-label={link.text}
+              href={link.href}
+              target="_blank"
+              class="prose-link"
+            >
+              <i class:list={[link.icon]} />
+              {link.text}
+            </a>
+          ))
+        }
+      </p>
+    </ul>
   </article>
 </BaseLayout>

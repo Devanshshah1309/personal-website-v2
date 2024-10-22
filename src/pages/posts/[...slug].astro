@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 type Props = { post: CollectionPosts }
 
 const { post } = Astro.props
-const { title, image, description, date, duration, tag } = post.data
+const { title, image, description, date, duration, tags } = post.data
 
 const { Content } = await post.render()
 
@@ -30,10 +30,9 @@ function getDate(date: string) {
 <BaseLayout title={title} description={description} pageType="article">
   <article class="prose">
     <h1>{title}</h1>
-    <p op-50>
-      {date && <time datetime={getDate(date)}>{date.split(',')}</time>}
-      {duration && <span>· {duration}</span>}
-      {tag && <span>· {tag}</span>}
+    {description && <p op-70>{description}</p>}
+    <p op-70>
+      {tags && tags.map((tag: string) => <span class="tag">{tag}</span>)}
     </p>
     {
       image && (
@@ -44,4 +43,16 @@ function getDate(date: string) {
     }
     <Content />
   </article>
+  <style>
+    .tag {
+      display: inline-block;
+      background-color: #f0f0f0; /* light background color */
+      border: 1px solid #ccc; /* chip-style border */
+      border-radius: 16px; /* rounded corners */
+      padding: 4px 8px; /* padding for the chip look */
+      margin-right: 8px; /* space between chips */
+      font-size: 14px; /* font size adjustment */
+      color: #333; /* text color */
+    }
+  </style>
 </BaseLayout>
