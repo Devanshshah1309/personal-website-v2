@@ -8,4 +8,7 @@ export default antfu({
     astro: true,
     css: true,
   },
+  rules: {
+    'no-irregular-whitespace': 'off', // Disable the rule to allow irregular whitespace
+  },
 })
