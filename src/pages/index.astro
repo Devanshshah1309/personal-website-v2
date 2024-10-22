@@ -8,7 +8,7 @@ import siteConfig from '@/site-config'
     <h1>Devansh</h1>
     <p>
       Hi, I'm Devansh, a final-year CS student at the National University of
-      Singapore.
+      Singapore (NUS).
     </p>
     <p>
       I often describe myself as <strong>creative problem solver</strong> who enjoys
@@ -17,6 +17,41 @@ import siteConfig from '@/site-config'
       open to new ideas.
     </p>
     <p>
+      <strong>Next year</strong>, I'm going to join Optiver as a Quantitative
+      Trader.
+    </p>
+    <p>Previously, I've <strong>interned</strong> at:</p>
+    <ul>
+      <li>
+        <a class="prose-link" href="https://optiver.com/" target="_blank">
+          Optiver</a
+        > (Quantitative Trader Intern)
+      </li>
+      <li>
+        <a class="prose-link" href="https://ailytics.ai/" target="_blank">
+          Ailytics</a
+        > (Software Engineering Intern)
+      </li>
+      <li>
+        <a
+          class="prose-link"
+          href="https://www.screeningeagle.com/"
+          target="_blank"
+        >
+          Screening Eagle</a
+        > (Backend Engineering Intern)
+      </li>
+      <li>
+        <a
+          class="prose-link"
+          href="https://www.comp.nus.edu.sg/~vwo/"
+          target="_blank"
+        >
+          Computing for Voluntary Welfare Organisations</a
+        > (Software Engineering Intern)
+      </li>
+    </ul>
+    <p>
       <strong>Right now</strong>, I am:
     </p>
     <ul>
@@ -24,10 +59,9 @@ import siteConfig from '@/site-config'
       <li>
         reading books that i've always wanted to, but didn't have the time to.
       </li>
-      <li>trying to write blogs more often.</li>
       <li>enjoying my final year at NUS</li>
     </ul>
-    <p><strong>In NUS</strong>, I have:</p>
+    <p>In <strong>NUS</strong>, I have:</p>
     <ul>
       <li>
         been part of <a
@@ -81,23 +115,40 @@ import siteConfig from '@/site-config'
           Algorithms</a
         > as a teaching assistant.
       </li>
-      <hr class="hr-line" />
-      <p>You can find me on:</p>
-      <p class="flex gap-x-4 gap-y-2 flex-wrap">
-        {
-          siteConfig.socialLinks.map((link) => (
-            <a
-              aria-label={link.text}
-              href={link.href}
-              target="_blank"
-              class="prose-link"
-            >
-              <i class:list={[link.icon]} />
-              {link.text}
-            </a>
-          ))
-        }
-      </p>
     </ul>
+    <p>In <strong>high school</strong>, I used to:</p>
+    <ul>
+      <li>
+        lead the student council as Head Boy (2021) and Deputy Head Boy (2020)
+        and . . . and House Captain (2015)
+      </li>
+      <li>
+        start new initiatives like the school's first conference event, and
+        peer-teaching program
+      </li>
+      <li>organize and take part in Model United Nation (MUN) events</li>
+      <li>be part of the school's badminton team (2014-2019)</li>
+      <li>
+        care too much about grades (enough to be awarded every academic award
+        there was to achieve)
+      </li>
+    </ul>
+    <hr class="hr-line" />
+    <p>You can find me on:</p>
+    <p class="flex gap-x-4 gap-y-2 flex-wrap">
+      {
+        siteConfig.socialLinks.map((link) => (
+          <a
+            aria-label={link.text}
+            href={link.href}
+            target="_blank"
+            class="prose-link"
+          >
+            <i class:list={[link.icon]} />
+            {link.text}
+          </a>
+        ))
+      }
+    </p>
   </article>
 </BaseLayout>
