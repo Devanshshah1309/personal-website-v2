@@ -5,6 +5,7 @@ import UnoCSS from 'unocss/astro'
 import vue from '@astrojs/vue'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
+import partytown from '@astrojs/partytown'
 
 export default defineConfig({
   site: 'https://astro-theme-vitesse.netlify.app/',
@@ -18,6 +19,11 @@ export default defineConfig({
       injectReset: true,
     }),
     vue(),
+    partytown({
+      config: {
+        forward: ['dataLayer.push'],
+      },
+    }),
   ],
   markdown: {
     remarkPlugins: [remarkMath],
