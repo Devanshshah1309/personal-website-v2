@@ -1,12 +1,12 @@
 ---
-title: I Built the World's First...
+title: I Built the World's First Correct Highlighter...
 date: 2024-11-25
-description: A tool that I now use daily.
+description: Or so I thought...
 tags:
   - building
 ---
 
-I built the world’s first *correct* highlighter extension for chrome. Okay, I’m mostly exaggerating (but not really).
+I built the world’s first *correct* highlighter extension for chrome. Okay, I’m mostly exaggerating.
 
 Check it out [here](https://chromewebstore.google.com/detail/minimal-highlighter/gioopdapheoejkiekebbkjjlnckhddde). It's completely free and doesn't require any sign-up.
 
@@ -63,4 +63,30 @@ And it works pretty nicely :)
     Your browser does not support the video tag.
 </video>
 
-You can find the chrome extension [here](https://chromewebstore.google.com/detail/minimal-highlighter/gioopdapheoejkiekebbkjjlnckhddde) — it would mean so much to me if you tried it out! (and lmk if there any other issues / features that would make you use this even more)
+Or so I thought...
+
+I quickly realized that even my highlighter was far from perfect, and was facing multiple issues. Just not the issues other extensions were facing.
+
+It was a more fundamental issue: in many cases, I didn't know what the ideal output should even look like. And it's, um, quite hard to build something if you don't even know what it's supposed to do.
+
+For example,
+
+1. If you highlight 2 separate sentences in the same paragraph, and then copy them, should they be put in the same paragraph? Or should there be aline break between them?
+2. When you highlight a part of the sentence that is in an unordered list, should the markdown output have the list format? If yes, what if you highlight two disjoint parts of the same list item? Should they be in the same list item, or should there be two list items?
+3. If you have a nested list, but you only highlight an inner list item, should the markdown output have the nested list structure or just a single layer list?
+
+I decided to step back and reevaluate what I was doing.
+
+I realized that I had set out to build "the" correct highlighter, but in the process, learnt that there is probably no such thing, because everyone's expectations of what the output should look like are different.
+
+In fact, even for my own use-case, I realized that I wanted different kinds of markdown outputs at different times. For example, sometimes, I want all the highlights to be prefixed with a `>` so that they become quotes, and sometimes, I want them to have the original formatting (as on the page).
+
+So, nope, in the end, I did not actually build the world's first correct highlighter, and in fact, it'll probably never exist.
+
+Lesson: Building the "correct" XYZ is a strong claim. It's much better to try to build a *better* XYZ where the definition of "better" is independent of the user (or at least, *many* people can collectively agree on what "better" is). There's rarely any one-size-fits-all solution when it comes to software, from browsers to note-taking apps (which is why you see so many similar products in the market - they cater to different groups of users).
+
+(Also, I don't think many people would care about the 1% edge cases anyway -- they would much rather have an easy-to-use tool with a good UI that works *almost* always. And so, it would've failed the "make something people want" test.)
+
+Somehow, I feel I'm satisfied with this conclusion, yet I'm glad I built this anyway.
+
+You can find it [here](https://chromewebstore.google.com/detail/minimal-highlighter/gioopdapheoejkiekebbkjjlnckhddde), if you're still interested!
