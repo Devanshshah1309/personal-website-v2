@@ -64,6 +64,7 @@ export default defineConfig({
     'i-ri-medium-line',
     'i-ri-numbers-line',
     'i-ri-questionnaire-line',
+    'i-ri-edit-line',
     'i-ri-hand-heart-line',
     'i-ri-camera-3-line',
     'i-ri-drinks-2-line',

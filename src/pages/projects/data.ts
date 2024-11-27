@@ -11,6 +11,12 @@ export const projectData: ProjectData = [
         href: 'https://thequantprep.com',
       },
       {
+        text: 'Highlighter Chrome Extension',
+        description: 'Highlight text and copy it in markdown format.',
+        icon: 'i-ri-edit-line',
+        href: 'https://chromewebstore.google.com/detail/minimal-highlighter/gioopdapheoejkiekebbkjjlnckhddde',
+      },
+      {
         text: 'Quizopia',
         description: 'A quiz platform for discrete structures used by 600+ students in NUS in 2023.',
         icon: 'i-ri-questionnaire-line',
