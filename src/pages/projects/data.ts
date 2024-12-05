@@ -11,6 +11,12 @@ export const projectData: ProjectData = [
         href: 'https://thequantprep.com',
       },
       {
+        text: 'Buzzword Academy',
+        description: 'An "official" AI certification made as a joke',
+        icon: 'i-ri-robot-2-fill',
+        href: 'https://super-official-ai-certification.vercel.app/',
+      },
+      {
         text: 'Highlighter Chrome Extension',
         description: 'Highlight text and copy it in markdown format.',
         icon: 'i-ri-edit-line',
