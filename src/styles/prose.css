@@ -123,8 +123,18 @@ ul {
   line-height: 1.4285714;
   margin-top: 0.8571429em;
 }
+
+html.dark code {
+  background-color: #222222;
+}
+
+html:not(.dark) code {
+  background-color: lightgray;
+}
 .prose code {
   font-weight: 600;
+  padding: 0.1em 0.2em;
+  border-radius: 10%;
   font-size: 0.875em;
 }
 .prose code::before {
@@ -204,6 +214,10 @@ ul {
 .prose img {
   margin-top: 2em;
   margin-bottom: 2em;
+  display: block; /* Added to make the image a block element */
+  margin-left: auto; /* Centering */
+  margin-right: auto; /* Centering */
+  max-width: 100%; /* Ensures the image doesn't exceed the container width */
 }
 .prose video {
   margin-top: 2em;

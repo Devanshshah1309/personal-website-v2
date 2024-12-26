@@ -78,10 +78,10 @@ function getYear(date: Date | string | number) {
   <style>
     .tag {
     display: inline-block;
-    background-color: #f0f0f0; /* light background color */
+    background-color: lightgray; /* light background color */
     border: 1px solid #ccc; /* chip-style border */
-    border-radius: 16px; /* rounded corners */
-    padding: 4px 8px; /* padding for the chip look */
+    border-radius: 20%; /* rounded corners */
+    padding: 0.2em 0.4em; /* padding for the chip look */
     margin-right: 8px; /* space between chips */
     font-size: 14px; /* font size adjustment */
     color: #333; /* text color */
