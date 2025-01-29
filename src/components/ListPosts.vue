@@ -65,26 +65,9 @@ function getYear(date: Date | string | number) {
             <i v-if="post.data.recording || post.data.video" text-base i-ri:film-line />
             <time v-if="post.data.date" :datetime="getDate(post.data.date)">{{ post.data.date.split(',')[0] }}</time>
             <span v-if="post.data.duration">· {{ post.data.duration }}</span>
-            <span v-if="post.data.tags">
-              <!-- tags should have rounded borders like clips -->
-              <span v-for="tag in post.data.tags" :key="tag" class="tag">{{ tag }}</span>
-            </span>
           </div>
         </div>
-        <div opacity-70 text-sm>{{ post.data.description }}</div>
       </a>
     </li>
   </ul>
-  <style>
-    .tag {
-    display: inline-block;
-    background-color: lightgray; /* light background color */
-    border: 1px solid #ccc; /* chip-style border */
-    border-radius: 20%; /* rounded corners */
-    padding: 0.2em 0.4em; /* padding for the chip look */
-    margin-right: 8px; /* space between chips */
-    font-size: 14px; /* font size adjustment */
-    color: #333; /* text color */
-    }
-  </style>
 </template>

@@ -30,10 +30,13 @@ function getDate(date: string) {
 <BaseLayout title={title} description={description} pageType="article">
   <article class="prose">
     <h1>{title}</h1>
-    {description && <p op-70>{description}</p>}
-    <p op-70>
-      {tags && tags.map((tag: string) => <span class="tag">{tag}</span>)}
-    </p>
+    {
+      description && (
+        <p op-70 pb-10>
+          {description}
+        </p>
+      )
+    }
     {
       image && (
         <p>
@@ -43,16 +46,4 @@ function getDate(date: string) {
     }
     <Content />
   </article>
-  <style>
-    .tag {
-      display: inline-block;
-      background-color: lightgray; /* light background color */
-      border: 1px solid #ccc; /* chip-style border */
-      border-radius: 20%; /* rounded corners */
-      padding: 0.2em 0.4em; /* padding for the chip look */
-      margin-right: 8px; /* space between chips */
-      font-size: 14px; /* font size adjustment */
-      color: #333; /* text color */
-    }
-  </style>
 </BaseLayout>

@@ -140,9 +140,9 @@ Also, we already have [evidence](https://www.astralcodexten.com/p/claude-fights-
 I have some weak suggestions (weak because I’m not really sure how feasible they are):
 
 - We can treat the current embeddings as a starting point and tweak (”fine-tune”) them subject to mathematical constraints to ensure they are as unbiased as they can be. e.g. `(male - female) . (good - bad) = 0` , and others.
-- Retrain the embeddings on a filtered corpus of text which excludes examples of obviously biased worldviews. I imagine obtaining a general consensus on what counts as biased (vs. factual or subjective) in today’s world is going to be the hard part, not to mention the number of man-hoursfiltering the texts.
+- Retrain the embeddings on a filtered corpus of text which excludes examples of obviously biased worldviews. I imagine obtaining a general consensus on what counts as biased (vs. factual or subjective) in today’s world is going to be the hard part, not to mention the number of man-hours filtering the texts.
 
-Nevertheless, if we’re only thousands of days away from AGI, maybeeee it’s worth making sure the models we get are ones free of prejudice and preconceived biased notions?
+Nevertheless, if we’re only thousands of days away from AGI, maybeeee it’s worth making sure the models we get are ones free of prejudice and biased notions?
 
 ---
 
