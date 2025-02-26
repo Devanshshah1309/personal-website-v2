@@ -6,7 +6,7 @@ description: ''
 
 It’s incredible to see how good AI has gotten at programming and building stuff. I use Cursor almost exclusively now, and have noticed myself prompting more and coding less. Tools already exist to create full-stack apps from scratch, using only a prompt.
 
-I started my undergraduate degree in Aug 2021, around a year before ChatGPT was released. And if you had told me then that this was how would be the state of programming right now, I would’ve laughed and told you to stop reading so many sci-fi novels.
+I started my undergraduate degree in Aug 2021, around a year before ChatGPT was released. And if you had told me then that this was how the state of programming would be right now, I would’ve laughed and told you to stop reading so many sci-fi novels.
 
 Yet here we are.
 

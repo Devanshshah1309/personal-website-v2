@@ -29,10 +29,6 @@ export default defineConfig({
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex],
     shikiConfig: {
-      themes: {
-        light: 'github-light-default',
-        dark: 'github-dark-default',
-      },
       wrap: true,
     },
   },

@@ -48,6 +48,14 @@ article {
   mix-blend-mode: normal;
 }
 
+html:not(.dark) {
+  background-color: white !important;
+}
+
+html.dark {
+  background-color: black !important;
+}
+
 ::view-transition-old(root) {
   z-index: 1;
 }
