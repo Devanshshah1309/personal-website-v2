@@ -86,7 +86,7 @@ function toggleNavDrawer() {
       <nav class="sm:flex hidden flex-wrap gap-x-6 position-initial flex-row">
         <a
           v-for="link in navLinks" :key="link.text" :aria-label="`${link.text}`" :target="getLinkTarget(link.href)"
-          nav-link :href="link.href"
+          prose-link :href="link.href"
         >
           {{ link.text }}
         </a>

@@ -52,22 +52,20 @@ function getYear(date: Date | string | number) {
           {{ getYear(post.data.date) }}
         </span>
       </div>
-      <a text-lg lh-tight nav-link flex="~ col gap-2" :aria-label="post.data.title" :target="getTarget(post)" :href="getHref(post)">
-        <div flex="~ col md:row gap-2 md:items-center">
-          <div flex="~ gap-2 items-center text-wrap">
-            <span opacity-100 hover:underline lh-normal>
-              <i v-if="post.data.draft" text-base vertical-mid i-ri-draft-line />
-              {{ post.data.title }}
-            </span>
-          </div>
-          <div text-sm ws-nowrap flex="~ gap-2 items-center">
-            <i v-if="post.data.redirect" text-base i-ri-external-link-line />
-            <i v-if="post.data.recording || post.data.video" text-base i-ri:film-line />
-            <time v-if="post.data.date" :datetime="getDate(post.data.date)">{{ post.data.date.split(',')[0] }}</time>
-            <span v-if="post.data.duration">· {{ post.data.duration }}</span>
-          </div>
+      <div flex="~ text-wrap gap-2 justify-between w-full">
+        <a text-lg lh-tight prose-link :aria-label="post.data.title" :target="getTarget(post)" :href="getHref(post)" block text-wrap break-words>
+          <span lh-normal>
+            <i v-if="post.data.draft" text-base vertical-mid i-ri-draft-line />
+            {{ post.data.title }}
+          </span>
+        </a>
+        <div text-sm ws-nowrap flex="~ gap-2 items-center">
+          <i v-if="post.data.redirect" text-base i-ri-external-link-line />
+          <i v-if="post.data.recording || post.data.video" text-base i-ri:film-line />
+          <time v-if="post.data.date" :datetime="getDate(post.data.date)">{{ post.data.date.split(',')[0] }}</time>
+          <span v-if="post.data.duration">· {{ post.data.duration }}</span>
         </div>
-      </a>
+      </div>
     </li>
   </ul>
 </template>
