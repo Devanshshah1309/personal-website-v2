@@ -8,7 +8,7 @@ import rehypeKatex from 'rehype-katex'
 import partytown from '@astrojs/partytown'
 
 export default defineConfig({
-  site: 'https://astro-theme-vitesse.netlify.app/',
+  site: 'https://devanshshah.dev',
   server: {
     port: 1977,
   },
