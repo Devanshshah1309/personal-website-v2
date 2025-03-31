@@ -11,6 +11,12 @@ export const projectData: ProjectData = [
         href: 'https://thequantprep.com',
       },
       {
+        text: 'LC Dashboard',
+        description: 'Company-wise dashboard of leetcode problems',
+        icon: 'i-ri-code-s-slash-line',
+        href: 'https://leetcode-company-wise-dashboard.netlify.app/',
+      },
+      {
         text: 'Buzzword Academy',
         description: 'An "official" AI certification made as a joke',
         icon: 'i-ri-robot-2-fill',

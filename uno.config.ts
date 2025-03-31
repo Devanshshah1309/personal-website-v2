@@ -71,5 +71,6 @@ export default defineConfig({
     'i-ri-drinks-2-line',
     'i-ri-train-line',
     'i-ri-telegram-line',
+    'i-ri-code-s-slash-line',
   ],
 })
