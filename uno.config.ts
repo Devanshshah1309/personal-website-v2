@@ -72,5 +72,6 @@ export default defineConfig({
     'i-ri-train-line',
     'i-ri-telegram-line',
     'i-ri-code-s-slash-line',
+    'i-ri-government-line',
   ],
 })

@@ -17,6 +17,12 @@ export const projectData: ProjectData = [
         href: 'https://leetcode-company-wise-dashboard.netlify.app/',
       },
       {
+        text: 'Participatory Budgeting',
+        description: 'Allow citizens to vote on which projects town councils in Singapore should work on',
+        icon: 'i-ri-government-line',
+        href: 'https://github.com/Devanshshah1309/participatory-budgeting',
+      },
+      {
         text: 'Buzzword Academy',
         description: 'An "official" AI certification made as a joke',
         icon: 'i-ri-robot-2-fill',
