@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import Chat from './Chat.vue'
+
 interface Post {
   id: string
   slug: string
@@ -40,6 +42,7 @@ function getYear(date: Date | string | number) {
 </script>
 
 <template>
+  <Chat client:load />
   <ul sm:min-h-38 min-h-28 mb-18>
     <template v-if="!list || list.length === 0">
       <div my-12 opacity-50>

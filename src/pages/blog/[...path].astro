@@ -1,4 +1,5 @@
 ---
+export const prerender = true
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import ListPosts from '@/components/ListPosts.vue'
 import siteConfig from '@/site-config'
@@ -40,5 +41,5 @@ function activeLink(pathname: string) {
       ))
     }
   </div>
-  <ListPosts list={posts} />
+  <ListPosts client:load list={posts} />
 </BaseLayout>

@@ -6,11 +6,15 @@ import vue from '@astrojs/vue'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import partytown from '@astrojs/partytown'
+import vercel from '@astrojs/vercel'
 
 export default defineConfig({
   site: 'https://devanshshah.dev',
+  output: 'server',
+  adapter: vercel(),
   server: {
-    port: 1977,
+    port: 3000,
+    host: true,
   },
   integrations: [
     mdx(),
@@ -18,10 +22,14 @@ export default defineConfig({
     UnoCSS({
       injectReset: true,
     }),
-    vue(),
+    vue({
+      jsx: true,
+      include: ['**/*.vue'],
+    }),
     partytown({
       config: {
         forward: ['dataLayer.push'],
+        debug: false,
       },
     }),
   ],
