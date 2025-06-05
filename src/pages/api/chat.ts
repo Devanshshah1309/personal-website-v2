@@ -2,7 +2,6 @@ import process from 'node:process'
 import { createClient } from '@supabase/supabase-js'
 import { CohereClient } from 'cohere-ai'
 import type { APIRoute } from 'astro'
-import type { ChatDocument } from 'cohere-ai/api'
 
 interface BlogChunk {
   url_path: string
@@ -69,7 +68,7 @@ export const POST: APIRoute = async ({ request }) => {
       .rpc('match_blog_chunks', {
         query_embedding: queryVector,
         match_threshold: 0.8,
-        match_count: 3,
+        match_count: 10,
       })
 
     if (error)

@@ -20,7 +20,7 @@ BLOG_DIR = "../src/content/blog"
 COHERE_API_KEY = os.getenv("COHERE_API_KEY", default=None)
 DB_CONNECTION_STRING = os.getenv("DB_CONNECTION_STRING")
 
-def split_text_into_chunks(text, chunk_size=1000):
+def split_text_into_chunks(text, chunk_size=500):
     '''
     split text every ~chunk_size characters
     and have an overlap of ~chunk_size/5 characters
@@ -97,7 +97,6 @@ def process_blogs(blog_name=''):
                 chunk,                   # content_txt
                 url_path,                # url_path
                 embedding,               # embedding (vector[])
-                datetime.now().isoformat()  # Convert to string for JSON
             ))
 
         # save in case insertion fails, we don't have to regenerate embeddings
@@ -109,12 +108,11 @@ def process_blogs(blog_name=''):
 
 # --- Insert into PostgreSQL ---
 def insert_to_db(records):
-    # Convert ISO format strings back to datetime for DB insertion
-    records = [(r[0], r[1], r[2], r[3], datetime.fromisoformat(r[4])) for r in records]
+    records = [(r[0], r[1], r[2], r[3]) for r in records]
     conn = psycopg2.connect(dsn=DB_CONNECTION_STRING)
     cursor = conn.cursor()
     sql = """
-        INSERT INTO blog_chunks (post_slug, content_txt, url_path, embedding, created_at)
+        INSERT INTO blog_chunks (post_slug, content_txt, url_path, embedding)
         VALUES %s
     """
     execute_values(cursor, sql, records)
