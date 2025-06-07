@@ -36,6 +36,4 @@ The reason is simple: the barrier to entry has gone down significantly (think: a
 
 So, when everyone can build, the game isn't about building anymore. It's about finding distribution and making people *care* about what you've built. [^1]
 
-### Footnotes
-
 [^1]: I predict that to get an edge on advertising, more and more people will start to build in public, trying to establish their own personal brands, and advertising their products via their journey. In such a case, advertisements will be inextricably linked to people, stories, and a general media consumption diet. *Everything will become an advertisement*. In particular, social media platforms are going to become the dominant advertising platforms, and their personalized recommendation algorithms are going to be bring advertisements of products you're likely to like / need on your feed. This will be the new way you will discover new products. (I find it slightly distasteful (but reluctantly accept as being inevitable) that the "building in public" movement started off as a genuine attempt to share cool things individuals were working on, but has now become more of a PR stunt.)

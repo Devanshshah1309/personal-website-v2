@@ -5,14 +5,17 @@ import { getPosts } from '@/utils/posts'
 
 export async function getStaticPaths() {
   const posts = await getPosts()
-  return posts.map((post) => {
-    return {
-      params: { slug: post.slug },
-      props: {
-        post,
-      },
-    }
-  })
+  return posts
+    .map((post) => {
+      if (!post.data) return null // Skip posts without data
+      return {
+        params: { slug: post.slug },
+        props: {
+          post,
+        },
+      }
+    })
+    .filter(Boolean) // Remove null entries
 }
 
 type Props = { post: CollectionPosts }

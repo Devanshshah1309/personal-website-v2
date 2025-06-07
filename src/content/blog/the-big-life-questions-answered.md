@@ -118,8 +118,6 @@ Now, I would much rather have goals and work towards them, and be happy while do
 
 I’d love to hear your thoughts on this too! [^7]
 
-## Footnotes
-
 [^1]: almost everyone *reading this** — because a large proportion of the world population doesn’t have the privilege (*yes*, privilege) to be thinking about this. You’re already on the second-highest level in Maslow’s hierarchy if you can afford to be thinking about this.
 
 [^2]: I’m not saying that we shouldn’t ask difficult questions that we probably won’t find answers too — in fact, that’s what science is all about. What I’m saying is that asking such questions does more harm than good and doesn’t leave you any better off.

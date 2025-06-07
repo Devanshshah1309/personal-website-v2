@@ -39,7 +39,7 @@ Here are some pictures to show just how vibrant and energetic the atmosphere was
 
 <figure>
 
-![Dining Hall](../../assets/images/blog/hnr25/dh.jpg)
+![Dining Hall](/images/blog/hnr25/dh.jpg)
 
 <figcaption>Hundreds of hackers building the next big thing.</figcaption>
 
@@ -47,7 +47,7 @@ Here are some pictures to show just how vibrant and energetic the atmosphere was
 
 <figure>
 
-![Dining Hall](../../assets/images/blog/hnr25/coffee.jpg)
+![Dining Hall](/images/blog/hnr25/coffee.jpg)
 
 <figcaption>Code, Coffee, Chaos.</figcaption>
 
@@ -55,7 +55,7 @@ Here are some pictures to show just how vibrant and energetic the atmosphere was
 
 <figure>
 
-![Dining Hall](../../assets/images/blog/hnr25/dh-2.jpg)
+![Dining Hall](/images/blog/hnr25/dh-2.jpg)
 
 <figcaption>Teams building actual physical prototypes.</figcaption>
 
@@ -63,7 +63,7 @@ Here are some pictures to show just how vibrant and energetic the atmosphere was
 
 <figure>
 
-![Mascot](../../assets/images/blog/hnr25/mascot.jpg)
+![Mascot](/images/blog/hnr25/mascot.jpg)
 
 <figcaption>Me wearing the mascot for the last time.</figcaption>
 
@@ -71,7 +71,7 @@ Here are some pictures to show just how vibrant and energetic the atmosphere was
 
 <figure>
 
-![Organisers](../../assets/images/blog/hnr25/organisers.jpg)
+![Organisers](/images/blog/hnr25/organisers.jpg)
 
 <figcaption>All organisers: coreteam members + volunteers.</figcaption>
 

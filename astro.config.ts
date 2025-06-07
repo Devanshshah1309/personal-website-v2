@@ -10,8 +10,12 @@ import vercel from '@astrojs/vercel'
 
 export default defineConfig({
   site: 'https://devanshshah.dev',
-  output: 'server',
-  adapter: vercel(),
+  output: 'static',
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
   server: {
     port: 3000,
     host: true,

@@ -3,6 +3,8 @@ import { createClient } from '@supabase/supabase-js'
 import { CohereClient } from 'cohere-ai'
 import type { APIRoute } from 'astro'
 
+export const prerender = false
+
 interface BlogChunk {
   url_path: string
   content_txt: string

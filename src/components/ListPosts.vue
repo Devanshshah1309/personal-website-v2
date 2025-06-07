@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import Chat from './Chat.vue'
-
 interface Post {
   id: string
   slug: string
@@ -10,11 +8,9 @@ interface Post {
   render: any
 }
 
-withDefaults(defineProps<{
+defineProps<{
   list: Post[]
-}>(), {
-  list: () => [],
-})
+}>()
 
 function getDate(date: string) {
   return new Date(date).toISOString()
@@ -42,14 +38,13 @@ function getYear(date: Date | string | number) {
 </script>
 
 <template>
-  <Chat client:load />
   <ul sm:min-h-38 min-h-28 mb-18>
     <template v-if="!list || list.length === 0">
       <div my-12 opacity-50>
         nothing here yet.
       </div>
     </template>
-    <li v-for="(post, index) in list " :key="post.data.title" mb-8>
+    <li v-for="(post, index) in list" :key="post.data.title" mb-8>
       <div v-if="!isSameYear(post.data.date, list[index - 1]?.data.date)" select-none relative h18 pointer-events-none>
         <span text-7em color-transparent font-bold text-stroke-2 text-stroke-hex-aaa op-30 absolute top--0.2em>
           {{ getYear(post.data.date) }}

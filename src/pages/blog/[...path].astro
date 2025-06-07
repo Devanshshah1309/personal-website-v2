@@ -1,9 +1,11 @@
 ---
-export const prerender = true
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import ListPosts from '@/components/ListPosts.vue'
+import Chat from '@/components/Chat.vue'
 import siteConfig from '@/site-config'
 import { getPosts } from '@/utils/posts'
+
+export const prerender = true
 
 export async function getStaticPaths() {
   const paths = siteConfig.page.blogLinks.map((nav) => {
@@ -18,12 +20,7 @@ export async function getStaticPaths() {
 }
 
 const { path } = Astro.params
-
 const posts = await getPosts(path)
-
-function activeLink(pathname: string) {
-  return Astro.url.pathname.replace(/\/+/g, '/').replace(/\/$/, '') === pathname
-}
 ---
 
 <BaseLayout
@@ -41,5 +38,8 @@ function activeLink(pathname: string) {
       ))
     }
   </div>
-  <ListPosts client:load list={posts} />
+  <div class="mb-8">
+    <Chat client:visible />
+  </div>
+  <ListPosts list={posts} />
 </BaseLayout>

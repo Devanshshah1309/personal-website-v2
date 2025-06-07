@@ -51,7 +51,7 @@ This also means that if you have the choice to pick between receiving \$100 tod
 
 Now what if you want to calculate how much \$100 a year from now is worth today. In other words, how much money should you be given today that will be equivalent to giving you \$100 a year from now. Well, the answer is simple (because now you know how money works!): if you're given \$$\frac{100}{1.03}$ today, you can deposit it in the bank and at the end of the year, you'll have \$100 (since interest rate is 3%).
 
-![time-value-of-money](../../assets/images/blog/time-value-decay.webp)
+![Time Value of Money](/images/blog/time-value-of-money/time-value-of-money-1.png)
 
 More generally, assuming an interest rate of $r$% compounded annually, \$$x$ today is worth \$$x(1+r/100)^t$, $t$ years from now.
 
@@ -67,7 +67,7 @@ HIgher inflation rates mean that the value of money erodes faster, and so, money
 
 Another way of looking at it is that when inflation rates are high, you “discount” the future more, i.e., your “future money” is worth less than it would be without inflation (both of which would be less than your “present money” - assuming the same numerical amounts.)
 
-![time-decay](../../assets/images/blog/money-decay.webp)
+![Time Value of Money](/images/blog/time-value-of-money/time-value-of-money-2.png)
 
 ## Time-Money Equivalence
 
