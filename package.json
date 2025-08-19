@@ -2,11 +2,11 @@
   "name": "devansh",
   "type": "module",
   "version": "1.1.0",
-  "description": "A minimal, SEO-friendly portfolio and blog theme for Astro, supports Vue and UnoCSS.",
+  "description": "Devansh's Personal Website.",
   "license": "MIT",
   "keywords": [
     "devansh",
-    "portfolio website",
+    "personal website",
     "blog",
     "notes",
     "projects"

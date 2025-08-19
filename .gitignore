@@ -10,3 +10,4 @@ node_modules
 scripts/*.json
 venv/
 src/content/blog/DRAFT*.md
+**/.DS_Store
