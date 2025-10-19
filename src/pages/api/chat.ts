@@ -91,7 +91,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     // Generate response
     const chatRes = await cohere.chat({
-      model: 'command',
+      model: 'command-a-03-2025',
       message: query + epilog,
 
       preamble: `You are a knowledgeable blogger. Answer the question based ONLY on the following context provided, which are snippets of blogs written by you. Rules to follow:
