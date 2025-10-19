@@ -57,6 +57,21 @@ export const POST: APIRoute = async ({ request }) => {
   }
 
   try {
+    // Save query to database for tracking (without response initially)
+    const { data: queryData, error: queryError } = await supabase
+      .from('queries')
+      .insert({
+        query_text: query,
+        user_ip: request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown',
+        user_agent: request.headers.get('user-agent') || 'unknown',
+      })
+      .select('id')
+      .single()
+
+    if (queryError)
+      console.warn('Failed to save query to database:', queryError)
+      // Don't fail the request if query tracking fails
+
     // Get embedding for the query
     const embedRes = await cohere.embed({
       model: 'embed-english-v3.0',
@@ -110,6 +125,17 @@ Context:
       temperature: 0.1,
       maxTokens: 180,
     })
+
+    // Update the query record with the response
+    if (queryData?.id) {
+      const { error: updateError } = await supabase
+        .from('queries')
+        .update({ response_text: chatRes.text })
+        .eq('id', queryData.id)
+
+      if (updateError)
+        console.error('Failed to update query with response:', updateError)
+    }
 
     return new Response(JSON.stringify({
       answer: chatRes.text,
