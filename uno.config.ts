@@ -73,5 +73,6 @@ export default defineConfig({
     'i-ri-telegram-line',
     'i-ri-code-s-slash-line',
     'i-ri-government-line',
+    'i-ri-mail-line',
   ],
 })

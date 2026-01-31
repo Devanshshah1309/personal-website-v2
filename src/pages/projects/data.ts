@@ -11,6 +11,12 @@ export const projectData: ProjectData = [
         href: 'https://thequantprep.com',
       },
       {
+        text: 'Rationality Newsletter',
+        description: 'Eliezer\'s Sequences in a daily newsletter format, read by ~400 subscribers.',
+        icon: 'i-ri-mail-line',
+        href: 'https://rationality-newsletter.vercel.app',
+      },
+      {
         text: 'LC Dashboard',
         description: 'Company-wise dashboard of leetcode problems',
         icon: 'i-ri-code-s-slash-line',
