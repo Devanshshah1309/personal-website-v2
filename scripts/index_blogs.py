@@ -125,7 +125,4 @@ if __name__ == "__main__":
         raise RuntimeError("COHERE_API_KEY not found in .env")
     if not DB_CONNECTION_STRING:
         raise RuntimeError("DB_CONNECTION_STRING not found in .env")
-    process_blogs('deep-dive')
-    process_blogs('commencement')
-    process_blogs('chatbot')
-    process_blogs('digital-world')
+    process_blogs('cringe-is-a-constraint')
