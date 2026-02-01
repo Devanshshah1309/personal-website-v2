@@ -12,7 +12,7 @@
     "projects"
   ],
   "engines": {
-    "node": ">=20.0.0"
+    "node": "20.x"
   },
   "scripts": {
     "prepare": "simple-git-hooks",
@@ -29,11 +29,11 @@
     "@astrojs/partytown": "^2.1.2",
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
-    "@astrojs/vercel": "^8.1.5",
+    "@astrojs/vercel": "^9.0.4",
     "@astrojs/vue": "^5.1.0",
     "@supabase/supabase-js": "^2.49.9",
     "@unocss/reset": "^0.61.0",
-    "astro": "^5.8.2",
+    "astro": "^5.17.1",
     "cohere-ai": "^7.17.1",
     "katex": "^0.16.11",
     "nprogress": "^0.2.0",

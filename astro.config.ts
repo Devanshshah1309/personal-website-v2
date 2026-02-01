@@ -6,7 +6,7 @@ import vue from '@astrojs/vue'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import partytown from '@astrojs/partytown'
-import vercel from '@astrojs/vercel'
+import vercel from '@astrojs/vercel/serverless'
 
 export default defineConfig({
   site: 'https://devanshshah.dev',
