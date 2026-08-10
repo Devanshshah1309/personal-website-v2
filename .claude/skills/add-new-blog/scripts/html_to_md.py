@@ -171,7 +171,15 @@ def convert_body(body, image_map, slug):
                         "image from list_images() and add it before converting."
                     )
                 alt, fname = image_map[src]
-                blocks.append(f"![{alt}](../../../public/images/blog/{slug}/{fname})")
+                image_line = f"![{alt}](../../../public/images/blog/{slug}/{fname})"
+                # If Substack has a figcaption, this site's convention (see
+                # e.g. joy-and-productivity.md) is a plain-text line directly
+                # under the image, NO blank line in between — so caption text
+                # must be appended to the SAME block, not a separate one.
+                fc = el.find("figcaption")
+                if fc is not None and fc.get_text().strip():
+                    image_line += "\n" + inline_to_md(fc).strip()
+                blocks.append(image_line)
             elif "footnote" in cls:
                 pass  # handled by get_footnotes()
             elif "subscription-widget-wrap" in cls:

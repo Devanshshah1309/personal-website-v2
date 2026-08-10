@@ -53,6 +53,12 @@ Bundled helpers (run from the repo root):
    photos, `-q 90` for diagrams/screenshots) and save into
    `public/images/blog/<slug>/<descriptive-name>.webp`.
 
+   If the listing shows a non-empty `caption`, that's a real figcaption the
+   author wrote (unlike `scraped_alt`, keep this verbatim) — `convert_body()`
+   already carries it into the output automatically, appended directly under
+   the image markdown with no blank line, matching this site's existing
+   convention (see e.g. `joy-and-productivity.md`).
+
 5. **Convert the body to markdown** — write a short one-off Python snippet
    (don't hand-type the article text — it silently converts curly quotes/em
    dashes to straight ASCII and drifts from the source):
