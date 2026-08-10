@@ -84,6 +84,7 @@ Again, the naive solution is so stupidly simple and yet it’s surprising it wor
 Here’s an example of the complete sequence of steps that takes place:
 
 ![Version 1 agent trace showing a hallucinated tool result](../../../public/images/blog/i-built-claude-code-from-scratch/v1-hallucination-trace.webp)
+Hm rip it believed that Argentina has scored 14 goals - its actually 19. Great example of why you need more guard-rails when using agents - the search result was wrong!
 
 So basically:
 

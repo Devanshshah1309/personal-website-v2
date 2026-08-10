@@ -68,6 +68,7 @@ And then came the Final Boss of Waterslides. They had kept this set of waterslid
 So you get in an enclosed container, cross your arms and legs, and they count down 3-2-1, and then the floor is literally pulled from underneath your legs and you free-fall down for a bit.
 
 ![Waterslide tower with the free-fall drop](../../../public/images/blog/the-one-with-the-waterslide/slide-tower.webp)
+the right-most one didn’t have the free-fall drop, but was also really really fast!
 
 They knew I wasn’t going to do it, so they weren’t really trying to push me as much as they did for the Racing Nagas. So they went for it, while I stood their waiting and watching other people do the slides.
 
