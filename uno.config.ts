@@ -74,5 +74,6 @@ export default defineConfig({
     'i-ri-code-s-slash-line',
     'i-ri-government-line',
     'i-ri-mail-line',
+    'i-ri-send-plane-line',
   ],
 })

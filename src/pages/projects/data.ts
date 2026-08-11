@@ -17,6 +17,12 @@ export const projectData: ProjectData = [
         href: 'https://rationality-newsletter.vercel.app',
       },
       {
+        text: 'Personal Assistant Telegram Bot',
+        description: 'A vibe-coded PA to manage my life\'s admin (calendars, notion, saving articles, etc.)',
+        icon: 'i-ri-send-plane-line',
+        href: 'https://github.com/Devanshshah1309/personal-assistant-bot',
+      },
+      {
         text: 'LC Dashboard',
         description: 'Company-wise dashboard of leetcode problems',
         icon: 'i-ri-code-s-slash-line',
