@@ -7,7 +7,7 @@ tags:
   - decision making
 ---
 
-In trading, a necessary condition to make money is to have a model with _predictive power_. It should be able to predict, better[^1] than other market participants, where the price of something is going to be _in the future_. Using this, you can do trades which are considered “+EV” (i.e., would make money on average). If you think something is going to trade at $5.05 in the next 30 seconds, you’re happy to buy at $5.01 or sell at $5.08 for example.
+In trading, a necessary condition to make money is to have a model with _predictive power_. It should be able to predict, better[^1] than other market participants, where the price of something is going to be _in the future_. Using this, you can do trades which are considered “+EV” (i.e., would make money on average). If you think something is going to trade at \$5.05 in the next 30 seconds, you’re happy to buy at \$5.01 or sell at \$5.08 for example.
 
 Importantly, you don’t make money simply by being able to explain the past. You can whine and say “oh man, I knew it was going to happen” but unfortunately you can’t go back in time to do the trade. At best, you can count it as an intellectual win and brag about it to others. But intellectual victories don’t pay the bills.[^2]
 
@@ -31,8 +31,13 @@ The only requirement of this model is that it should have predictive power. It m
 
 If you’re in New York and someone gives you a beautifully drawn, colourful map of Amsterdam, it’s going to be useless for navigating purposes. You’re not going to be able to use it to get back home. You’d much rather have a rough sketch of New York.
 
+<figure>
+
 ![Magritte's The Treachery of Images](../../../public/images/blog/building-world-models/magritte-this-is-not-a-pipe.webp)
-This is not a pipe - it’s a _picture_ of a pipe, a representation. The map is not the territory.
+
+<figcaption>This is not a pipe - it’s a <em>picture</em> of a pipe, a representation. The map is not the territory.</figcaption>
+
+</figure>
 
 The beauty of a model is only in whether it can predict the future.
 
